@@ -41,3 +41,5 @@ func DeleteRent(c *gin.Context, id int) {
 		"message": "DeleteRent",
 	})
 }
+
+// Application validations
