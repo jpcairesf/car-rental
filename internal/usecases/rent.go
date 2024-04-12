@@ -1,6 +1,6 @@
 package usecases
 
-import "github.com/jpcairesf/kafka-saga/car-rental/internal/entity"
+import "github.com/jpcairesf/car-rental/internal/entity"
 
 func GetRents() []entity.Rent {
 	// Get all rents

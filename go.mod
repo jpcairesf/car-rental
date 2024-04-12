@@ -1,4 +1,4 @@
-module github.com/jpcairesf/kafka-saga/car-rental
+module github.com/jpcairesf/car-rental
 
 go 1.22.0
 
