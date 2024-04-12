@@ -1,12 +1,11 @@
 package entity
 
 type Car struct {
-	Id           int    `gorm: "type:int; primary_key"`
-	Model        string `gorm: "type: varchar(20)"`
-	Year         int    `gorm: "type:int"`
-	Color        string `gorm: "type:varchar(20)"`
-	LicensePlate string `gorm: "type:varchar(20)"`
-	IsRented     bool   `gorm: "type:bool"`
+	Id           int    `gorm: "type:int; primaryKey"`
+	Model        string `gorm: "type: varchar(20); notNull"`
+	Year         int    `gorm: "type:int; notNull"`
+	Color        string `gorm: "type:varchar(20); notNull"`
+	LicensePlate string `gorm: "type:varchar(20); notNull; unique"`
 }
 
 // Business validations

@@ -15,7 +15,6 @@ type CarOutput struct {
 	Year         int    `json:"year"`
 	Color        string `json:"color"`
 	LicensePlate string `json:"license_plate"`
-	IsRented     bool   `json:"is_rented"`
 }
 
 func GetCars(c *gin.Context) []CarOutput {
