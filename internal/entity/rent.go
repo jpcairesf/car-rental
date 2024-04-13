@@ -17,7 +17,7 @@ type Rent struct {
 // Business validations
 func (r *Rent) Validate() error {
 	if r.EndDate.Before(r.StartDate) {
-		return errors.New("End date must be after start date")
+		return errors.New("end date must be after start date")
 	}
 	return nil
 }
